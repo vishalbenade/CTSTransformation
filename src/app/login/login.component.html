@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="custom">
+    <div>
+      <div>
+        <img class="logo" src="../../assets/images/pngkey_1.png" />
+      </div>
+      <div class="outside">
+        <div class="e2_33">
+          <label class="cts_signIn">CTS Sign In</label>
+          <label class="enter_Password_lbl"
+            >Enter your password to Sign In</label
+          >
+          <!-- <div class="validationError">
+            <img class="icon_Error" src="../../assets/images/Vector2.png" />
+            <label class="validationErrorText"
+              >Access denied or invalid password</label
+            >
+          </div> -->
+          <label class="user_Label">User</label>
+          <input type="text" class="user_Input" value="{{ user }}" />
+
+          <label class="username_Label">Username</label>
+          <input type="text" class="username_Input" value="{{ username }}" />
+
+          <label class="password_Label">Password</label>
+          <input
+            id="inputPassword"
+            matInput
+            class="password_Input"
+            [type]="hide ? 'password' : 'text'"
+          />
+          <div class="eye_icon">
+            <button
+              id="test"
+              mat-icon-button
+              matSuffix
+              (click)="hide = !hide"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide"
+            >
+              <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+            </button>
+          </div>
+          <button
+            class="login_Button"
+            routerLink="/landingpage"
+            routerLinkActive="active"
+          >
+            <span class="login_Button_Text">LOG IN</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

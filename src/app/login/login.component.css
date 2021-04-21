@@ -1,0 +1,417 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v1_7 {
+  width: 100%;
+  height: 642px;
+  background: rgba(249, 249, 249, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.name {
+  color: #fff;
+}
+.v1_11 {
+  width: 100%;
+  height: 642px;
+  background: rgba(196, 196, 196, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.name {
+  color: #fff;
+}
+.name {
+  color: #fff;
+}
+.name {
+  color: #fff;
+}
+.Rectangle-32 {
+  width: 552px;
+  height: 392px;
+  padding: 11px 91px 35px;
+  box-shadow: 0 4px 4px 0 rgba(40, 40, 40, 0.25);
+  background-color: #ffffff;
+}
+.OM_SA_Pattern_Onyx_on_Transparent_Bg_Strip_CMYK-2 {
+  width: 1366px;
+  height: 642px;
+}
+.Rectangle-88 {
+  width: 1366px;
+  height: 642px;
+  background-image: linear-gradient(
+    to top,
+    rgba(241, 242, 242, 0.99),
+    rgba(241, 242, 242, 0)
+  );
+}
+.e2_10 {
+  width: 1366px;
+  height: 642px;
+  position: absolute;
+}
+.e2_11 {
+  background-image: linear-gradient(
+    0deg,
+    rgba(
+        241.00000083446503,
+        242.00000077486038,
+        242.00000077486038,
+        0.9900000095367432
+      )
+      0%,
+    rgba(241.00000083446503, 242.00000077486038, 242.00000077486038, 0) 100%
+  );
+  width: 1366px;
+  height: 642px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.e2_9 {
+  background-color: rgba(
+    196.00000351667404,
+    196.00000351667404,
+    196.00000351667404,
+    1
+  );
+  width: 1366px;
+  height: 642px;
+}
+.e2_7 {
+  width: 1366px;
+  height: 642px;
+  position: absolute;
+}
+.e2_8 {
+  width: 1366px;
+  height: 642px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url("/../../../src/assets/images/om_sa_pattern_onyx_on_transparent_bg_strip_cmyk_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.e2_10 {
+  width: 1366px;
+  height: 642px;
+  position: absolute;
+}
+.e2_11 {
+  background-image: linear-gradient(
+    0deg,
+    rgba(
+        241.00000083446503,
+        242.00000077486038,
+        242.00000077486038,
+        0.9900000095367432
+      )
+      0%,
+    rgba(241.00000083446503, 242.00000077486038, 242.00000077486038, 0) 100%
+  );
+  width: 1366px;
+  height: 642px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.e2_33 {
+  box-shadow: 0px 4px 4px
+    rgba(40.00000141561031, 40.00000141561031, 40.00000141561031, 0.25);
+  background-color: rgba(255, 255, 255, 1);
+  width: 552.0098876953125px;
+  height: 403px;
+  position: absolute;
+  width: 552px;
+  height: 392px;
+  left: 407px;
+  top: 129px;
+}
+
+.outside {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: -2.81%;
+}
+
+.logo {
+  position: absolute;
+  width: 212px;
+  height: 47px;
+  left: 577px;
+  top: 58px;
+}
+.cts_signIn {
+  position: absolute;
+  left: 35.69%;
+  right: 35.51%;
+  top: 2.81%;
+  bottom: 87.5%;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 43px;
+  /* or 154% */
+
+  letter-spacing: -0.015em;
+
+  color: #282828;
+}
+
+.enter_Password_lbl {
+  position: absolute;
+  left: 30.98%;
+  right: 30.8%;
+  top: 13.27%;
+  bottom: 80.36%;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: -0.015em;
+
+  color: rgba(40, 40, 40, 0.8);
+}
+
+.user_Label {
+  position: absolute;
+  left: 16.49%;
+  right: 75%;
+  top: 23.68%;
+  bottom: 71.94%;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+
+  color: #808285;
+}
+
+.user_Input {
+  position: absolute;
+  left: 16.49%;
+  right: 16.49%;
+  top: 30.32%;
+  bottom: 62.5%;
+  background-color: rgba(255, 255, 255, 1);
+  width: 370px;
+  height: 36px;
+  border: 1px solid
+    rgba(220.00000208616257, 221.00000202655792, 222.00000196695328, 1);
+
+  color: rgba(40.00000141561031, 40.00000141561031, 40.00000141561031, 1);
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: -1.5;
+}
+
+.username_Label {
+  position: absolute;
+  left: 16.49%;
+  right: 66.3%;
+  top: 41.54%;
+  bottom: 54.08%;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+
+  color: #808285;
+}
+.username_Input {
+  position: absolute;
+  left: 16.49%;
+  right: 16.49%;
+  top: 48.17%;
+  bottom: 44.64%;
+
+  background-color: rgba(255, 255, 255, 1);
+  width: 370px;
+  height: 36px;
+  border: 1px solid
+    rgba(220.00000208616257, 221.00000202655792, 222.00000196695328, 1);
+  color: rgba(40.00000141561031, 40.00000141561031, 40.00000141561031, 1);
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: -1.5;
+}
+.password_Label {
+  position: absolute;
+  left: 16.49%;
+  right: 66.3%;
+  top: 59.4%;
+  bottom: 36.22%;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+
+  color: #808285;
+}
+.password_Input {
+  position: absolute;
+  left: 16.49%;
+  right: 16.49%;
+  top: 66.03%;
+  bottom: 26.79%;
+
+  background-color: rgba(255, 255, 255, 1);
+  width: 370px;
+  height: 36px;
+  border: 1px solid
+    rgba(220.00000208616257, 221.00000202655792, 222.00000196695328, 1);
+  color: rgba(40.00000141561031, 40.00000141561031, 40.00000141561031, 1);
+  font-family: "Montserrat";
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: -1.5;
+}
+.user_Label:after {
+  content: " *";
+  color: #ea1a00;
+}
+.username_Label:after {
+  content: " *";
+  color: #ea1a00;
+}
+.password_Label:after {
+  content: " *";
+  color: #ea1a00;
+}
+
+.login_Button {
+  position: absolute;
+  left: 16.49%;
+  right: 16.49%;
+  top: 81.89%;
+  bottom: 8.93%;
+
+  background: #00c0e8;
+  border: none;
+  width: 370px;
+  height: 36px;
+}
+
+.login_Button_Text {
+  color: rgba(255, 255, 255, 1);
+  width: 57px;
+  height: 19px;
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: -1.5;
+}
+
+.custom {
+  width: 1366px;
+  height: 642px;
+  display: block;
+  position: relative;
+  background: linear-gradient(
+      0deg,
+      rgba(241.00000083446503, 242.00000077486038, 242.00000077486038, 0.97) 0%,
+      rgba(
+          241.00000083446503,
+          242.00000077486038,
+          242.00000077486038,
+          242.00000077486038
+        )
+        100%
+    ),
+    url("../../assets/images/om_sa_pattern_onyx_on_transparent_bg_strip_cmyk_2 (1).png")
+      no-repeat center center / cover;
+}
+.eye_icon {
+  position: absolute;
+  left: 420px;
+  right: 10px;
+  top: 263px;
+  bottom: 14px;
+  width: 25px;
+  height: 18px;
+  background: #ffffff;
+}
+
+#test {
+  background-color: white;
+  border: none;
+  outline-color: white;
+}
+
+.validationError {
+  position: absolute;
+  width: 280px;
+  bottom: 329px;
+  height: 25px;
+  left: 133px;
+  top: 75px;
+  
+  background: rgba(255, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.validationErrorText {
+  position: absolute;
+  width: 250px;
+  height: 25px;
+  left: 25px;
+  top: 1px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
+
+  letter-spacing: -0.015em;
+
+  color: rgba(100, 10, 10, 0.47);
+}
+.icon_Error{
+  width: 17px;
+  height: 17px;
+  top: 10px;
+  margin-left: 5px;
+  margin-top: 4px;
+}

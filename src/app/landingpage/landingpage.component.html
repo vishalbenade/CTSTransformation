@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="divMain">
+      <div class="divGreenLine"></div>
+
+      <nav class="e1_346">
+        <img
+          class="e1_351"
+          src="../../assets/images/Group 11.png"
+          (click)="drawer.toggle()"
+        />
+        <!-- <div class="e1_351">
+          <div class="e1_352"></div>
+          <div class="e1_353"></div>
+          <div class="e1_354"></div>
+        </div> -->
+        <img class="e1_347" src="../../assets/images/pngkey_1.png" />
+        <select class="e1_365">
+          <option class="e1_368">Tax Module</option>
+          <option class="e1_368">Tax Module</option>
+        </select>
+        <select class="e1_369">
+          <option class="e1_368">Tax Period</option>
+          <option class="e1_368">Tax Period</option>
+        </select>
+        <select class="e1_373">
+          <option class="e1_368">View Document</option>
+          <option class="e1_368">View Document</option>
+        </select>
+        <mat-icon
+          matBadge="5"
+          matBadgeColor="warn"
+          matBadgeSize="small"
+          matBadgePosition="above after"
+          matBadgeOverlap="true"
+          class="e1_355"
+          >notifications</mat-icon
+        >
+        <a class="e1_349">QA</a>
+        <div class="e1_350">
+          Welcome
+          <label class="e1_888">{{ user }}</label>
+        </div>
+      </nav>
+      <mat-drawer-container
+        hasBackdrop="true"
+        autosize
+        style="position: inherit"
+      >
+        <mat-drawer #drawer mode="over">
+          <mat-nav-list style="width: 373px">
+            <a
+              mat-list-item
+              id="matlistitem1"
+              *ngFor="let item of navItems"
+              class="abc"
+              style="height: 72px"
+              routerLink="/landingpage"
+              (click)="drawer.toggle()"
+            >
+              <span style="margin: 38px">{{ item }}</span>
+            </a>
+
+            <!-- <mat-list-item
+              class="abc"
+              style="height: 72px"
+              routerLink="/landingpage"
+              *ngFor="let option of navItems"
+              (click)="drawer.toggle()"
+              >{{ option.name }}</mat-list-item
+            > -->
+            <!-- <a class="abc" style="height: 72px;" mat-list-item routerLink="/landingpage" *ngFor="let option of navItems"> {{option.name}} </a>  -->
+          </mat-nav-list>
+        </mat-drawer>
+        <mat-drawer-content>
+          <div class="e1_123">
+            <!-- <mat-drawer #drawer mode="side">I'm a drawer</mat-drawer> -->
+            <!-- <mat-drawer-content>  
+            <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+            <p>hi</p>
+          </mat-drawer-content>
+         -->
+            <span class="e1_267">Welcome to Old Mutual Central Tax System</span>
+            <div class="e1_69">
+              <!-- <div class=e1_129>
+                <div class="e1_131"></div>
+                <div class="e1_130"></div>
+              </div> -->
+              <div class="line2"></div>
+              <div class="line3"></div>
+              <div class="linenew linenew-line4"></div>
+              <div class="linenew linenew-line5"></div>
+              <div class="linenew linenew-line6"></div>
+              <img class="icon1" src="../../assets/images/Group 190.png" />
+              <label class="e1_132">Submission Progress</label>
+
+              <table>
+                <thead>
+                  <tr class="e1_133">
+                    <div class="line"></div>
+                    <th class="row row-fundentity">Fund Entity</th>
+                    <th class="row row-fileloaded">File Loaded</th>
+                    <th class="row row-promoted">Promoted</th>
+                    <th class="row row-logicalfile">Logical File</th>
+                    <th class="rownew rownew-test">Submitted to SARS (Test)</th>
+                    <th class="rownew rownew-live">Submitted to SARS (Live)</th>
+                    <th class="row row-sarsresponse">SARS Response</th>
+                    <th class="row row-certificategenerated">
+                      Cerificate Generated
+                    </th>
+                    <th class="row row-efillingcompleted">
+                      E-Filling Completed
+                    </th>
+                    <th class="row row-duedate">Due Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data">
+                    <td class="row-saraf">{{i.fundEntity}}</td>
+                    <td
+                      class="color"
+                      [style.background-color]="i.fileLoaded"
+                    ></td>
+                    <td
+                      class="color"
+                      [style.background-color]="i.promoted"
+                    ></td>
+                    <td
+                      class="color"
+                      [style.background-color]="i.logicalFile"
+                    ></td>
+                    <td class="color" [style.background-color]="i.test"></td>
+                    <td class="color" [style.background-color]="i.live"></td>
+                    <td
+                      class="color"
+                      [style.background-color]="i.sarsResponse"
+                    ></td>
+                    <td
+                      class="color"
+                      [style.background-color]="i.certificateGenerated"
+                    ></td>
+                    <td
+                      class="color"
+                      [style.background-color]="i.eFillingCompleted"
+                    ></td>
+                    <td class="color" [style.background-color]="i.dueDate"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="tablebuttons">
+                <button class="tablebutton tablebutton-button1">
+                  <span class="buttontext buttontext-button1"
+                    >Correspondence Overview</span
+                  >
+                </button>
+                <button class="tablebutton tablebutton-button2">
+                  <span class="buttontext buttontext-button2"
+                    >Data Load Overview</span
+                  >
+                </button>
+                <button class="tablebutton tablebutton-button3">
+                  <span class="buttontext buttontext-button3"
+                    >Submission Overview</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="accordionwidth">
+              <mat-accordion class="dataloadrect">
+                <!-- #enddocregion basic-panel -->
+                <mat-expansion-panel
+                  (opened)="panelOpenState = true"
+                  (closed)="panelOpenState = false"
+                >
+                  <mat-expansion-panel-header>
+                    <img src="../../assets/images/Vector.png" class="icon2" />
+                    <mat-panel-title class="dataloadtext">
+                      Data Load - Recent Error
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <p>I'm visible because I am open. Grid will display here!</p>
+                </mat-expansion-panel>
+              </mat-accordion>
+
+              <mat-accordion class="sarssubmissionrect">
+                <!-- #enddocregion basic-panel -->
+                <mat-expansion-panel
+                  (opened)="panelOpenState = true"
+                  (closed)="panelOpenState = false"
+                >
+                  <mat-expansion-panel-header>
+                    <img
+                      src="../../assets/images/carbon_document-import.png"
+                      class="icon3"
+                    />
+                    <mat-panel-title
+                      class="dataloadtext"
+                      style="width: 294px; height: 24px"
+                    >
+                      SARS Submission - Recent Error
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <p>I'm visible because I am open. Grid will display here!</p>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </div>
+          </div>
+        </mat-drawer-content>
+      </mat-drawer-container>
+    </div>
+  </body>
+</html>
