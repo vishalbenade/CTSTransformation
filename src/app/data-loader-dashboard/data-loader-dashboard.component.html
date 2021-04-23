@@ -69,9 +69,27 @@
         </select>
         <button class="btnSearch"><span class="btnSearchText">SEARCH</span></button>
     </div>
-    <div>
-     
+    <div class="div_Table1">
+      
+      <table mat-table [dataSource]="transactions" class="mat-elevation-z8">
+        <mat-text-column name="select" headerText="Select"></mat-text-column>
+        <mat-text-column name="fileName" headerText="File Name"></mat-text-column>
+        <mat-text-column name="taxPeriod" headerText="Tax Period"></mat-text-column>
+        <mat-text-column name="landedDate" headerText="Landed Date"></mat-text-column>
+        <mat-text-column name="rangeStart" headerText="Range Start"></mat-text-column>
+        <mat-text-column name="rangeEnd" headerText="Range End"></mat-text-column>
+        <mat-text-column name="status" headerText="Status"></mat-text-column>
+              
+        
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr> 
+               
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>         
+      </table>
+      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" class="tableFooter"></mat-paginator>
+      <div class="tableLine1"></div>
+      <div class="tableLine2"></div>
     </div>
+    
     <button class="btnUpload"><span class="bynUploadText">UPLOAD</span></button>
   </body>
 </html>
