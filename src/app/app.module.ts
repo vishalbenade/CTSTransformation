@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
-import { MatBadgeModule,MatBadgeSize } from '@angular/material/badge';
+import { MatBadgeModule } from '@angular/material/badge';
 import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -14,17 +14,20 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DataLoaderDashboardComponent } from './data-loader-dashboard/data-loader-dashboard.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,  
-    LandingpageComponent
+    LandingpageComponent, DataLoaderDashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    MatTableModule,
     MatBadgeModule,
     BrowserAnimationsModule,
     MatIconModule,
@@ -32,7 +35,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSidenavModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

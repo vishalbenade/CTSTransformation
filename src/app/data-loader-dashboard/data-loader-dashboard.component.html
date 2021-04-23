@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="div_greenHeader"></div>
+    <nav class="e1_346">
+      <img
+        class="e1_351"
+        src="../../assets/images/Group 11.png"
+        
+      />
+      <!-- <div class="e1_351">
+          <div class="e1_352"></div>
+          <div class="e1_353"></div>
+          <div class="e1_354"></div>
+        </div> -->
+      <img class="e1_347" src="../../assets/images/OM_Logo_Horizonal_Vignette_on_White_RGB 1.png" />
+      <select class="e1_365">
+        <option class="e1_368">Tax Module</option>
+        <option class="e1_368">Tax Module</option>
+      </select>
+      <select class="e1_369">
+        <option class="e1_368">Tax Period</option>
+        <option class="e1_368">Tax Period</option>
+      </select>
+      <select class="e1_373">
+        <option class="e1_368">View Document</option>
+        <option class="e1_368">View Document</option>
+      </select>      
+      <mat-icon
+      matBadge="5"
+      matBadgeColor="warn"
+      matBadgeSize="small"
+      matBadgePosition="above after"
+      matBadgeOverlap="true"
+      class="e1_355"
+      >notifications</mat-icon
+    >
+      <a class="e1_349">QA</a>
+      <div class="navLine"></div>
+      <div class="e1_350">
+        Welcome
+        <label class="e1_888">{{ user }}</label>
+      </div>
+    </nav>
+    <label class="dataLoadText">Data Load History</label>
+    <img [@rotatedState]='state' class="refreshIcon" src="../../assets/images/Group 46.png" (click)="rotate()"/>
+    <div class="div_108">
+        <label class="lbl lbl-labelSrcSym">Source System</label>
+        <select class="ddl ddl-ddlSrcSym">
+            <option class="ddlOptions ddlOptions-ddlSrcSymOptions">All</option>
+            <option class="ddlOptions ddlOptions-ddlSrcSymOptions">Source System 1</option>
+            <option class="ddlOptions ddlOptions-ddlSrcSymOptions">Source System 2</option>
+        </select>
+        <label class="lbl lbl-labelStatus">Status</label>
+        <select class="ddl ddl-status">
+            <option class="ddlOptions ddlOptions-ddlSrcSymOptions">All</option>
+            <option class="ddlOptions ddlOptions-ddlSrcSymOptions">Status 1</option>
+            <option class="ddlOptions ddlOptions-ddlSrcSymOptions">Status 2</option>
+        </select>
+        <button class="btnSearch"><span class="btnSearchText">SEARCH</span></button>
+    </div>
+    <div>
+     
+    </div>
+    <button class="btnUpload"><span class="bynUploadText">UPLOAD</span></button>
+  </body>
+</html>
